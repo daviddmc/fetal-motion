@@ -1,4 +1,11 @@
 function draw_fetus(data1, data2, t, ax)
+%draw_fetus  Plot 3D fetal pose.
+%   draw_fetus(DATA1, [], T) plots the T-th frame of DATA1.
+%
+%   draw_fetus(DATA1, DATA2, T) plots the T-the frame of DATA1 and DATA2 in 
+%   solid and dashed line respectively.
+%   
+%   draw_fetus(..., AX) plots into AX instead of GCA.
 
 if ~exist('ax','var')
     ax = gca;
