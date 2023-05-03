@@ -1,11 +1,11 @@
-function data = read_data(path_joints, name, resolution, dt, ga)
+function data = read_data(path_joints, name, resolution, duration, ga)
 s = load(path_joints);
 J = s.joint_coord;
 assert(size(J, 2) == 3 && size(J, 3) == 15)
 if length(resolution) == 1
-    J = J * resolution;
+    J = J .* resolution;
 else
-    J = J * reshape(resolution, 1, 3, 1);
+    J = J .* reshape(resolution, 1, 3, 1);
 end
 I = find(J <= 0);
 for idx = I
@@ -28,7 +28,7 @@ else
     [~, name, ~] = fileparts(path_joints);
     data.name = name;
 end
-data.dt = dt;
+data.dt = duration / size(data.joints, 1) * 60;
 data.ga = ga;
 
 end
