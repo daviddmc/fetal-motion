@@ -4,6 +4,8 @@ addpath('./src')
 
 % path to the keypoint data
 data_path = './data';
+% path to the data table
+data_table = './data.xlsx';
 % resolution of the data in mm
 resolution = [3.0, 3.0, 3.0];
 % threshold for motion (mm/s)
@@ -22,7 +24,7 @@ ang = {'knee_L', 'knee_R', 'elbow_L', 'elbow_R'};
 
 
 %% read data
-T = readtable('data.xlsx', 'TextType', 'string');
+T = readtable(data_table, 'TextType', 'string');
 data = cell(size(T, 1), 1);
 for ii = 1:size(T,1)
     data{ii} = read_data( ...
