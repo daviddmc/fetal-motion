@@ -19,6 +19,27 @@ where `T` is the number of frames,
 `3` is the three dimensions (x, y, z),
 and `K` is the number of different keypoints, which is 15 in our work.
 
+label keypoints id
+
+```
+% matlab is 1-indexed
+ 1: ankle (left)
+ 2: ankle (right)
+ 3: knee (left)
+ 4: knee (right)
+ 5: bladder
+ 6: elbow (left)
+ 7: elbow (right)
+ 8: eye (left)
+ 9: eye (right)
+10: hip (left)
+11: hip (right)
+12: shoulder (left)
+13: shoulder (right)
+14: wrist (left)
+15: wrist (right)
+```
+
 Information of each subject is stored in `data.xlsx`, which consists of 4 columns.
 
 ```
