@@ -27,6 +27,7 @@ ang = {'knee_L', 'knee_R', 'elbow_L', 'elbow_R'};
 T = readtable(data_table, 'TextType', 'string');
 data = cell(size(T, 1), 1);
 for ii = 1:size(T,1)
+    ga = T.GA_week + T.GA_day / 7;
     data{ii} = read_data( ...
         fullfile(data_path, [T.name{ii} '.mat']), ... % path to the data
         T.name{ii}, ... % name of subject
