@@ -1,3 +1,9 @@
+%%
+%
+% This example illustrates how to compute metrics based on the keypoint
+% data.
+%
+
 %% setup
 addpath('./src')
 
