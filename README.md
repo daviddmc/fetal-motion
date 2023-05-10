@@ -51,7 +51,7 @@ GA_day
 
 ## example
 
-Run `example.m` for an exmaple. The results will be stored in `results.xlsx`.
+Run `example_metric.m` for an exmaple. The results will be stored in `results.xlsx`.
 
 ## citation
 
