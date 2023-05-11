@@ -2,6 +2,10 @@
 
 fetal motion analysis using 3D keypoint data
 
+<p align="center">
+   <img src="./example.gif" align="center" width="600">
+</p>
+
 ## data
 
 The input data are the 3D coordinates of each keypoint in each frame.
