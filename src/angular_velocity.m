@@ -1,7 +1,7 @@
-function [m, s] = angular_velocity(data)
+function [m, s, ang_vec] = angular_velocity(data)
 %angular_velocity  Mean and std of velocity of keypoints.
-%   [M, S] = angulari_velocity(DATA) computes the mean M and standard 
-%   deviation S of angular velocity (in deg/s). 
+%   [M, S, V] = angulari_velocity(DATA) computes the mean M and standard 
+%   deviation S of angular velocity V (in deg/s). 
 %
 %   The list of angles is as follows.
 %

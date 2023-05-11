@@ -1,7 +1,7 @@
-function [m, s] = bone_length(data)
+function [m, s, res] = bone_length(data)
 %bone_length  Mean and std of bone length in fetal pose.
-%   [M, S] = bone_length(DATA) computes the mean M and standard deviation S
-%   of bone length in fetal pose. 
+%   [M, S, B] = bone_length(DATA) computes the mean M and standard 
+%   deviation S of bone length B in fetal pose. 
 %   
 %   The list of bones is as follows.
 %

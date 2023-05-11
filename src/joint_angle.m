@@ -1,7 +1,7 @@
-function [m, s] = joint_angle(data)
+function [m, s, ang] = joint_angle(data)
 %joint_angle  Mean and std of joint angles.
-%   [M, S] = joint_angle(DATA) computes the mean M and standard deviation S
-%   of joint angles (in degree). 
+%   [M, S, A] = joint_angle(DATA) computes the mean M and standard 
+%   deviation S of joint angles A (in degree). 
 %
 %   The list of angles is as follows.
 %

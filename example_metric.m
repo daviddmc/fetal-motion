@@ -67,7 +67,7 @@ bl_mean = zeros(size(T, 1), length(bone));
 bl_std = zeros(size(T, 1), length(bone));
 % compute metric
 for ii = 1:size(T, 1)
-    [bl_mean(ii, :), bl_std(ii, :)] = bone_length(data{ii});
+    [bl_mean(ii, :), bl_std(ii, :), ~] = bone_length(data{ii});
 end
 % save output
 for ii = 1:length(bone)
@@ -83,7 +83,7 @@ mean_vel = zeros(size(T, 1), length(kp));
 std_vel = zeros(size(T, 1), length(kp));
 % compute metric
 for ii = 1:size(T, 1)
-    [mean_vel(ii, :), std_vel(ii, :)] = velocity(data{ii});
+    [mean_vel(ii, :), std_vel(ii, :), ~] = velocity(data{ii});
 end
 % save output
 for ii = 1:length(kp)
@@ -99,7 +99,7 @@ angle_mean = zeros(size(T, 1), length(ang));
 angle_std = zeros(size(T, 1), length(ang));
 % compute metric
 for ii = 1:size(T, 1)
-    [angle_mean(ii, :), angle_std(ii, :)] = joint_angle(data{ii});
+    [angle_mean(ii, :), angle_std(ii, :), ~] = joint_angle(data{ii});
 end
 % save output
 for ii = 1:length(ang)
@@ -115,7 +115,7 @@ angle_vel_mean = zeros(size(T, 1), length(ang));
 angle_vel_std = zeros(size(T, 1), length(ang));
 % compute metric
 for ii = 1:size(T, 1)
-    [angle_vel_mean(ii, :), angle_vel_std(ii, :)] = angular_velocity(data{ii});
+    [angle_vel_mean(ii, :), angle_vel_std(ii, :), ~] = angular_velocity(data{ii});
 end
 % save output
 for ii = 1:length(ang)
@@ -131,7 +131,7 @@ angle_acc_mean = zeros(size(T, 1), length(ang));
 angle_acc_std = zeros(size(T, 1), length(ang));
 % compute metric
 for ii = 1:size(T, 1)
-    [angle_acc_mean(ii, :), angle_acc_std(ii, :)] = angular_acceleration(data{ii});
+    [angle_acc_mean(ii, :), angle_acc_std(ii, :), ~] = angular_acceleration(data{ii});
 end
 % save output
 for ii = 1:length(ang)

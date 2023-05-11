@@ -1,7 +1,7 @@
-function [m, s] = angular_acceleration(data)
+function [m, s, ang_acc] = angular_acceleration(data)
 %angular_acceleration  Mean and std of angular acceleration of keypoints.
-%   [M, S] = angulari_acceleration(DATA) computes the mean M and standard 
-%   deviation S of angular acceleration (in deg/s^2). 
+%   [M, S, A] = angulari_acceleration(DATA) computes the mean M and 
+%   standard deviation S of angular acceleration A (in deg/s^2). 
 %
 %   The list of angles is as follows.
 %
